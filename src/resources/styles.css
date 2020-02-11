@@ -28,7 +28,6 @@ body {
 }
 
 .center_wrapper {
-    width: 900px;
     margin:0 auto;
 }
 
@@ -153,23 +152,29 @@ footer .footer_copyright {
 
 .vn_wrapper {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding: 170px 0px;
 }
 
 .vn_item {
     width:50%;
+    min-width: 300px;
     color:#ffffff;
     text-align: center;
+    margin-bottom: 10px;
 }
                       
 .vn_item .vn_outer {
-    width: 300px;
+    width: 280px;
+    height: 350px;
     border: 2px solid #828282;
-    margin: auto;
+    margin: 0 auto;
     padding: 5px;
 }
 
 .vn_item .vn_inner { 
+    height: 350px;
     border: 2px solid #828282;
     position: relative;
     padding: 0px 20px;
@@ -223,12 +228,12 @@ footer .footer_copyright {
     text-align: center;
     text-transform: uppercase;
     color:#2c2c2c;
-    font-size: 52px;
+    font-size: 48px;
 }
 
 .highlight_wrapper .highlight_description {
     line-height: 30px;
-    font-size: 18px;
+    font-size: 14px;
     font-weight: 300;
     border-top: 1px solid #dddddd;
     border-bottom: 1px solid #dddddd;
@@ -241,12 +246,12 @@ footer .footer_copyright {
 }
 
 .discount_wrapper .discount_porcentage {
-    padding-right: 100px;
+    padding-right: 50px;
 }
 
 .discount_wrapper .discount_porcentage span:nth-child(1) {
     color: #ff4800;
-    font-size: 125px;
+    font-size: 90px;
     font-weight: 400;
     display: block;
     line-height: 120px;
@@ -254,14 +259,14 @@ footer .footer_copyright {
 
 .discount_wrapper .discount_porcentage span:nth-child(2) {
     color: #2c2c2c;
-    font-size: 50px;
+    font-size: 48px;
     font-weight: 400;
     display: block;
 }
 
 
 .discount_wrapper .discount_description h3 {
-    font-size: 34px;
+    font-size: 32px;
     font-weight: 100;
     margin: 0px;
     color: #2c2c2c;
@@ -269,7 +274,7 @@ footer .footer_copyright {
 
 .discount_wrapper .discount_description p { 
     line-height: 30px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
 }
 
@@ -286,19 +291,21 @@ footer .footer_copyright {
     color: #ffffff;
     text-transform: uppercase;
     text-align: center;
-    font-size: 50px;
+    font-size: 46px;
     margin: 0;
 }
 
 .pricing_wrapper {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .pricing_wrapper .pricing_item{
-    flex-grow: 1;
-    width: 33%;
+    width: 350px;
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+
 }
 
 .pricing_wrapper .pricing_inner_wrapper {
@@ -358,3 +365,53 @@ footer .footer_copyright {
     padding: 15px 20px;
     text-align: center;
 }
+    /* =================================================
+                         media
+    =============================================== */
+
+    @media all and (max-width: 576px) {
+        .artist_name{
+            width: 300px;
+        }
+        
+        .countdown_wrapper .countdown_time {
+            font-size: 20px;
+            margin-right: 11px;
+            padding-right: 20px;
+        }
+        
+        .countdown_wrapper .countdown_tag {
+            font-size: 12px;
+        }
+
+
+
+
+
+        .highlight_wrapper h2 {
+            font-size: 32px;
+        }
+        
+        .highlight_wrapper .highlight_description {
+            font-size: 12px;
+        }
+        
+        
+        .discount_wrapper .discount_porcentage span:nth-child(1) {
+            font-size: 60px;
+        }
+        
+        .discount_wrapper .discount_porcentage span:nth-child(2) {
+            font-size: 35px;
+        }
+        
+        
+        .discount_wrapper .discount_description h3 {
+            font-size: 23px;
+        }
+        
+        .discount_wrapper .discount_description p { 
+            font-size: 10px;
+        }
+
+    }
